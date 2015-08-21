@@ -1,1 +1,7 @@
-<%= greeting %>
+<%= erb :statement, locals: { statement: bill.statement } %>
+
+<%= erb :package, locals: { package: bill.package } %>
+
+<%= erb :call_charges, locals: { call_charges: bill.call_charges } %>
+
+<%= erb :sky_store, locals: { sky_store: bill.sky_store } %>
