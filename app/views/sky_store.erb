@@ -1,1 +1,11 @@
-<%= sky_store %>
+<% sky_store.rentals.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.cost %>
+<% end %>
+
+<% sky_store.buy_and_keep.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.cost %>
+<% end %>
+
+<%= sky_store.total %>
